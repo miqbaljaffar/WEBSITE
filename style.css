@@ -38,11 +38,10 @@ section {
 }
 
 section#home {
-    background: linear-gradient(135deg, #667eea, #764ba2), url('path/to/your/image.jpg') no-repeat center center/cover;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     padding: 10em 2em;
 }
-
 
 section#about {
     background: linear-gradient(135deg, #89fffd, #ef32d9);
@@ -173,3 +172,9 @@ form button:hover {
         padding: 0 0.5em;
     }
 }
+.social-links img {
+    width: 40px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+    height: auto; /* Biarkan tingginya disesuaikan secara otomatis */
+    margin: 0 10px; /* Sesuaikan jarak antara logo */
+}
+
