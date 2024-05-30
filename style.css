@@ -175,6 +175,8 @@ form button:hover {
 .social-links img {
     width: 40px; /* Sesuaikan dengan ukuran yang Anda inginkan */
     height: auto; /* Biarkan tingginya disesuaikan secara otomatis */
-    margin: 0 10px; /* Sesuaikan jarak antara logo */
+    max-width: 100%; /* Logo tidak akan melebihi lebar parent element */
+    display: inline-block; /* Membuat logo sebagai inline block */
 }
+
 
