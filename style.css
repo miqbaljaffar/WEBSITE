@@ -1,14 +1,17 @@
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #f4f4f4;
-    color: #333;
+    background: #f9f9f9; /* Abu-abu terang */
+    color: #333; /* Abu-abu gelap */
+    font-size: 16px;
 }
 
+/* Header Styles */
 header {
-    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    background: #000; /* Hitam solid */
     color: white;
     padding: 1em 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -29,8 +32,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #ccc; /* Warna hover */
+}
+
+/* Section Styles */
 section {
     padding: 4em 2em;
     text-align: center;
@@ -38,24 +47,16 @@ section {
 }
 
 section#home {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: #1a1a1a; /* Hitam keabu-abuan */
     color: white;
     padding: 10em 2em;
 }
 
-section#about {
-    background: linear-gradient(135deg, #89fffd, #ef32d9);
-    color: white;
-}
-
-section#projects {
-    background: linear-gradient(135deg, #f6d365, #fda085);
-    color: white;
-}
-
+section#about,
+section#projects,
 section#contact {
-    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
-    color: white;
+    background: #f9f9f9; /* Putih abu-abu */
+    color: #333;
 }
 
 .content {
@@ -63,21 +64,24 @@ section#contact {
     margin: 0 auto;
 }
 
+/* Project Styles */
 .project {
-    background: rgba(255, 255, 255, 0.8);
+    background: #fff; /* Putih solid */
     margin: 1em 0;
     padding: 1em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer Styles */
 footer {
-    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    background: #000; /* Hitam solid */
     color: white;
     text-align: center;
     padding: 1em 0;
 }
 
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -85,20 +89,25 @@ form {
     margin: 0 auto;
 }
 
-form label, form input, form textarea, form button {
+form label,
+form input,
+form textarea,
+form button {
     margin: 0.5em 0;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     padding: 0.5em;
-    border: none;
+    border: 1px solid #333;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    color: #333;
 }
 
 form button {
     padding: 0.5em;
-    background-color: #333;
+    background-color: #000; /* Hitam solid */
     color: white;
     border: none;
     border-radius: 4px;
@@ -107,12 +116,37 @@ form button {
 }
 
 form button:hover {
-    background-color: #555;
+    background-color: #333; /* Abu-abu gelap */
 }
 
-/* Media Queries untuk Responsivitas */
+/* Social Links */
+.social-links img {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
 
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Lingkaran */
+    border: 3px solid #fff; /* Putih */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+
     nav ul {
         display: flex;
         flex-direction: column;
@@ -147,6 +181,10 @@ form button:hover {
 }
 
 @media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Ukuran font lebih kecil untuk ponsel */
+    }
+
     header {
         padding: 0.5em 0;
     }
@@ -172,11 +210,62 @@ form button:hover {
         padding: 0 0.5em;
     }
 }
-.social-links img {
-    width: 40px; /* Sesuaikan dengan ukuran yang Anda inginkan */
-    height: auto; /* Biarkan tingginya disesuaikan secara otomatis */
-    max-width: 100%; /* Logo tidak akan melebihi lebar parent element */
-    display: inline-block; /* Membuat logo sebagai inline block */
+
+/* Project Styles */
+.project img {
+    width: 100%; /* Membuat gambar memenuhi lebar kontainer */
+    max-width: 400px; /* Membatasi lebar maksimal gambar */
+    height: auto; /* Menjaga proporsi gambar */
+    object-fit: contain; /* Gambar akan menyesuaikan ukuran, tanpa memotong atau merusak proporsi */
+    border-radius: 8px; /* Sudut gambar sedikit membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan jika diinginkan */
+    margin: 0 auto; /* Menjaga gambar tetap terpusat */
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+    .project img {
+        max-width: 80%; /* Gambar akan menggunakan 80% dari lebar layar pada tablet */
+    }
+}
 
+@media (max-width: 480px) {
+    .project img {
+        max-width: 75%; /* Gambar akan menggunakan 75% dari lebar layar pada ponsel */
+    }
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Agar proyek terpusat */
+    padding: 4em 2em;
+}
+
+.project {
+    background: #fff; /* Putih solid */
+    margin: 1em;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 45%; /* Menetapkan lebar proyek sekitar setengah dari lebar kontainer */
+    max-width: 45%; /* Membatasi lebar maksimal proyek agar tidak lebih dari 50% */
+}
+
+@media (max-width: 768px) {
+    #projects {
+        display: block;
+    }
+
+    .project {
+        flex: 0 0 100%; /* Membuat proyek 100% lebar pada tablet */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        flex: 0 0 100%; /* Membuat proyek 100% lebar pada ponsel */
+        max-width: 100%;
+    }
+}
