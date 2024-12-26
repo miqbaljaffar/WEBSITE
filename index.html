@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammad Iqbal Jaffar's Portfolio</title>
+    <title>Portfolio - Mohammad Iqbal Jaffar</title>
+    
+    <!-- External Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <nav>
             <ul>
@@ -20,46 +23,75 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Home Section -->
     <section id="home">
         <div class="content" data-aos="fade-up">
+            <img src="pp.jpg" alt="Profile Photo" class="profile-photo">
             <h1>Welcome to My Portfolio</h1>
             <p>Hello, I'm Mohammad Iqbal Jaffar, a Machine Learning Engineer.</p>
         </div>
     </section>
+
+    <!-- About Section -->
     <section id="about">
         <div class="content" data-aos="fade-right">
             <h2>About Me</h2>
             <p>Write something about yourself.</p>
         </div>
     </section>
+
+    <!-- Projects Section -->
     <section id="projects">
-        <div class="content" data-aos="fade-left">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
-            </div>
+        <div class="project">
+            <h3>GlucoScan: Sugar Monitoring App</h3>
+            <img src="gluco.jpg" alt="GlucoScan App Preview">
+            <p>Designed an AI-powered application to classify and detect nutrition facts on product packaging. Implemented OCR to extract sugar content and provided user alerts (safe, caution, danger) based on daily intake.</p>
         </div>
+        <div class="project">
+            <h3>GreenTechRecycle: Waste Sorting System</h3>
+            <img src="gtr.jpg" alt="GreenTechRecycle App Preview">
+            <p>Developed a microcontroller-based system to automate waste categorization (metal, organic, non-organic) using inductive proximity and LDR sensors.</p>
+        </div>
+        <div class="project">
+            <h3>PerpusSmart: Library Management System</h3>
+            <img src="perpus.jpg" alt="PerpusSmart App Preview">
+            <p>Created a desktop application to improve library efficiency by automating book tracking and inventory management.</p>
+        </div>
+        <div class="project">
+            <h3>AcaraIn: Event Information and QR Code App</h3>
+            <img src="acar.jpg" alt="AcaraIn App Preview">
+            <p>Built an Android application for event management with QR code generation and data storage via Firebase Realtime Database.</p>
+        </div>        
     </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <div class="content" data-aos="fade-up">
             <h2>Connect with Me</h2>
             <div class="social-links">
-                <a href="https://www.facebook.com/iqbaljaffar.iqbaljaffar/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/miqbaljaffar_/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/mohammad-iqbal-jaffar-091939290/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="LinkedIn"></a>
-                <a href="https://github.com/miqbaljaffar" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="GitHub"></a>
+                <a href="https://www.facebook.com/iqbaljaffar.iqbaljaffar/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/miqbaljaffar_/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/mohammad-iqbal-jaffar-091939290/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/miqbaljaffar" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="GitHub">
+                </a>
             </div>
         </div>
     </section>
-    
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Mohammad Iqbal Jaffar. All rights reserved.</p>
-    </footer>
+        <p>&copy; 2024 Mohammad Iqbal Jaffar | Bandung, Jawa Barat | (+62) 81388670054 | iqbaljaffar1108@gmail.com</p>
+    </footer>    
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
