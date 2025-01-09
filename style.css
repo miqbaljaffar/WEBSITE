@@ -64,6 +64,38 @@ section#contact {
     margin: 0 auto;
 }
 
+/* Profile Photo */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Lingkaran */
+    border: 3px solid #fff; /* Putih */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Animasi hover */
+}
+
+/* Center Button in Home Section */
+section#home .btn {
+    margin: 1em auto; /* Menjaga tombol tetap terpusat */
+}
+
 /* Project Styles */
 .project {
     background: #fff; /* Putih solid */
@@ -71,6 +103,17 @@ section#contact {
     padding: 1em;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Images */
+.project img {
+    width: 100%;
+    max-width: 400px; /* Membatasi lebar maksimal gambar */
+    height: auto; /* Menjaga proporsi gambar */
+    object-fit: contain; /* Gambar akan menyesuaikan ukuran */
+    border-radius: 8px; /* Sudut gambar sedikit membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    margin: 0 auto; /* Menjaga gambar tetap terpusat */
 }
 
 /* Footer Styles */
@@ -129,16 +172,6 @@ form button:hover {
 
 .social-links img:hover {
     transform: scale(1.1);
-}
-
-/* Profile Photo */
-.profile-photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Lingkaran */
-    border: 3px solid #fff; /* Putih */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
 }
 
 /* Media Queries */
@@ -208,64 +241,5 @@ form button:hover {
 
     form {
         padding: 0 0.5em;
-    }
-}
-
-/* Project Styles */
-.project img {
-    width: 100%; /* Membuat gambar memenuhi lebar kontainer */
-    max-width: 400px; /* Membatasi lebar maksimal gambar */
-    height: auto; /* Menjaga proporsi gambar */
-    object-fit: contain; /* Gambar akan menyesuaikan ukuran, tanpa memotong atau merusak proporsi */
-    border-radius: 8px; /* Sudut gambar sedikit membulat */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan jika diinginkan */
-    margin: 0 auto; /* Menjaga gambar tetap terpusat */
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .project img {
-        max-width: 80%; /* Gambar akan menggunakan 80% dari lebar layar pada tablet */
-    }
-}
-
-@media (max-width: 480px) {
-    .project img {
-        max-width: 75%; /* Gambar akan menggunakan 75% dari lebar layar pada ponsel */
-    }
-}
-
-#projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Agar proyek terpusat */
-    padding: 4em 2em;
-}
-
-.project {
-    background: #fff; /* Putih solid */
-    margin: 1em;
-    padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 0 0 45%; /* Menetapkan lebar proyek sekitar setengah dari lebar kontainer */
-    max-width: 45%; /* Membatasi lebar maksimal proyek agar tidak lebih dari 50% */
-}
-
-@media (max-width: 768px) {
-    #projects {
-        display: block;
-    }
-
-    .project {
-        flex: 0 0 100%; /* Membuat proyek 100% lebar pada tablet */
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .project {
-        flex: 0 0 100%; /* Membuat proyek 100% lebar pada ponsel */
-        max-width: 100%;
     }
 }
