@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Mohammad Iqbal Jaffar, a Machine Learning Engineer showcasing impactful projects in AI, IoT, and software development.">
+    <title>Portfolio - Mohammad Iqbal Jaffar</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="content" data-aos="fade-up">
+            <img src="pp.jpg" alt="Profile picture of Mohammad Iqbal Jaffar" class="profile-photo" loading="lazy">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello, I'm Mohammad Iqbal Jaffar, a Machine Learning Engineer.</p>
+            <a href="https://drive.google.com/file/d/1wIvGHNYnHJ5RFyK3JzegS2nRJdwcyXql/view?usp=sharing" class="btn" target="_blank" rel="noopener noreferrer">View My CV</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="content" data-aos="fade-right">
+            <h2>About Me</h2>
+            <p>Informatics Engineering student with a strong passion for Machine Learning and Data Science. Skilled in developing innovative solutions using Python, SQL, and other cutting-edge technologies. Adept at problem-solving, teamwork, and executing projects, with hands-on experience in applications such as waste sorting systems, library management tools, and sugar monitoring apps.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Predictive Analytics for MSRP</h3>
+            <a href="https://github.com/miqbaljaffar/MLT/blob/main/laporan.md" target="_blank" rel="noopener noreferrer">
+                <img src="mlt5.png" alt="Preview of Analytics and Modelling" loading="lazy">
+            </a>
+            <p>Unveiling the key drivers of vehicle pricing, this project integrates predictive analytics and advanced data visualization to reveal trends and refine pricing strategies in the automotive market. By leveraging robust machine learning models, it offers actionable insights for manufacturers and stakeholders to stay competitive.</p>
+        </div>        
+        <div class="project">
+            <h3>GlucoScan: Sugar Monitoring App</h3>
+            <img src="gluco.jpg" alt="Preview of GlucoScan App" loading="lazy">
+            <p>Designed an AI-powered application to classify and detect nutrition facts on product packaging. Implemented OCR to extract sugar content and provided user alerts (safe, caution, danger) based on daily intake.</p>
+        </div>
+        <div class="project">
+            <h3>GreenTechRecycle: Waste Sorting System</h3>
+            <img src="gtr.jpg" alt="Preview of GreenTechRecycle System" loading="lazy">
+            <p>Developed a microcontroller-based system to automate waste categorization (metal, organic, non-organic) using inductive proximity and LDR sensors.</p>
+        </div>
+        <div class="project">
+            <h3>PerpusSmart: Library Management System</h3>
+            <img src="perpus.jpg" alt="Preview of PerpusSmart System" loading="lazy">
+            <p>Created a desktop application to improve library efficiency by automating book tracking and inventory management using a local database in phpMyAdmin.</p>
+        </div>
+        <div class="project">
+            <h3>AcaraIn: Event Information and QR Code App</h3>
+            <img src="acar.jpg" alt="Preview of AcaraIn App" loading="lazy">
+            <p>Built an Android application for event management with QR code generation and data storage via Firebase Realtime Database.</p>
+        </div>        
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="content" data-aos="fade-up">
+            <h2>Connect with Me</h2>
+            <div class="social-links">
+                <a href="https://www.facebook.com/iqbaljaffar.iqbaljaffar/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/miqbaljaffar_/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" loading="lazy">
+                </a>
+                <a href="https://www.linkedin.com/in/mohammad-iqbal-jaffar-091939290/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="LinkedIn" loading="lazy">
+                </a>
+                <a href="https://github.com/miqbaljaffar" target="_blank" rel="noopener noreferrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1024px-Octicons-mark-github.svg.png" alt="GitHub" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Mohammad Iqbal Jaffar | Bandung, Jawa Barat | (+62) 81388670054 | iqbaljaffar1108@gmail.com</p>
+    </footer>    
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent successfully!');
+        });
+    </script>
+</body>
+</html>
